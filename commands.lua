@@ -2,7 +2,7 @@ local utils = require("utils")
 
 local commands = {}
 
--- Register Slash Commands
+
 function commands.registerSlashCommands(client)
     client:createCommand({
         name = "embed",
@@ -41,7 +41,7 @@ function commands.registerSlashCommands(client)
     })
 end
 
--- Command Logic
+
 commands["embed"] = function(interaction, config)
     local title = interaction.data.options[1].value
     local description = interaction.data.options[2].value
